@@ -2,6 +2,10 @@ import random
 
 user_choice = input("Choose rock, paper or scissors: ")
 
+if user_choice not in ["rock", "paper", "scissors"]:
+    print("Invalid choice.")
+    exit()
+
 choices = ["rock", "scissors", "paper"]
 
 computer_choice = random.choice(choices)
